@@ -1,0 +1,26 @@
+{
+  "website": {
+    "version": "V1.0.0",
+    "url": "https://dashizhihuan2018-source.github.io/AIPlayer-website/",
+    "repository": "https://github.com/dashizhihuan2018-source/AIPlayer-website",
+    "source": "main:/",
+    "hosting": "GitHub Pages platform subdomain, not an independently registered domain or VPS",
+    "incrementalCost": 0
+  },
+  "software": {
+    "version": "V1.1.2",
+    "build": 18,
+    "status": "prerelease",
+    "architecture": "arm64",
+    "minimumOS": "macOS 13.5",
+    "signing": "ad-hoc; not Apple notarized",
+    "download": "https://github.com/dashizhihuan2018-source/AIPlayer/releases/download/v1.1.2/AIPlayer-V1.1.2-build18-macos-arm64.dmg",
+    "bytes": 231321594,
+    "sha256": "61e12aba4ab9328762f4f4feaffa9a36d53a37b43db78e8d4e55eac499980bb2",
+    "sourceCommit": "0104723f6932eabbe91960a9cffaf315a4ab8c1d",
+    "sourceTag": "v1.1.2",
+    "license": "AGPL-3.0-or-later and dependency-specific licenses"
+  },
+  "scope": "Website only. Existing installer is linked unchanged; no App replacement or software private-source publication.",
+  "verificationDate": "2026-10-26"
+}
