@@ -1,11 +1,11 @@
 {
   "website": {
-    "version": "V1.1.0",
+    "version": "V1.2.0",
     "url": "https://dashizhihuan2018-source.github.io/AIPlayer-website/",
     "repository": "https://github.com/dashizhihuan2018-source/AIPlayer-website",
     "source": "main:/",
-    "hosting": "GitHub Pages platform subdomain, not an independently registered domain or VPS",
-    "incrementalCost": 0
+    "hosting": "GitHub Pages plus isolated static mirror on existing Tencent Cloud host",
+    "mirror": "https://szls-changfeng.maip.top/aiplayer/"
   },
   "software": {
     "version": "V1.1.2",

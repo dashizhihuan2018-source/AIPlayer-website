@@ -1,42 +1,38 @@
-# 网站演示素材与版本边界
+# 最新版真实截图与字体
 
-网站 V1.1.0，2026-10-26。参考既有 Nankong 宣传海报及 R12 视频的内容层次，重新实现网页；不直接复用含第三方电影封面的整张宣传海报或搜索页。
+网站 V1.2.0，2026-10-26。文案沿用已认可宣传海报及视频的“发现 → 观看 → 分享”层次，GIF只是特色之一。视觉参考用户指定PDFMaster官网，独立实现暖纸、深蓝、朱红层次。
 
-## 真实素材
+## 捕获身份
 
-| 网站文件（assets/demos/） | 来源及准确范围 |
+正式安装版 V1.1.2/build18，与当日公开最新Release一致；主程序摘要：
+`8fc393d94a33b119b648dbc9bc2214c656c9b3be7deaf24d224dba26274c783e`。
+
+本次从正式App打开许可清楚的Coffee Run示例，捕获原始窗口JPEG：2850×1598。没有重绘控件、放大截图冒充4K或混入私人媒体。
+
+| 文件 | 内容 |
 | --- | --- |
-| player-real.png | build15 GIF 连续实录第 0 秒原帧，1312×750；真实 UI，不是重绘 |
-| gif-settings-real.png | 同一实录第 2 秒原帧；显示 20 FPS / 640 默认档，不是4K输出截图 |
-| poster-preview-real.png | build15 海报连续实录第 9 秒原帧；历史六帧时间线预览 |
-| gif-operation.mp4 | 原宣传 gif-continuous.mp4 逐字节复制；H.264，1312×750，4.466667秒，无音轨、原速连续实录 |
-| poster-operation.mp4 | 原宣传 poster-continuous.mp4 逐字节复制；H.264，1312×750，9.966667秒，无音轨，包含等待过程，未使用压缩等待的剪辑版 |
-| gif-export.gif | 原 R12 使用的真实软件导出，1920×804、3帧、约0.73秒；不是4K，也不是上方录像即时成果 |
-| gif-export-first.png | 上述 GIF 的既有静态首帧预览，逐字节复制 |
-| poster-export.png | 原 R12 使用的真实1200×620六帧时间线海报，逐字节复制；不是当前竖版海报样例 |
+| assets/screenshots/home-build18.jpg | 最新版首页：本地打开与搜索入口 |
+| assets/screenshots/player-build18.jpg | 最新版播放画面与原生工具、控制条，片段约92秒 |
+| assets/screenshots/gif-settings-build18.jpg | 最新版GIF设置，当前4K（3840）、20FPS、1倍速；不代表输出文件验证 |
 
-原宣传实录已对窗口画面裁切、缩放并静音。本站视频未再剪辑、变速、配音或修改界面；PNG 仅提取指定原帧。网页按容器尺寸显示，不改变下载文件的实际像素。没有把生成图片、旧图或放大截图冒充当前软件4K导出。
+旧build15截图、录屏与导出已从当前网站资源和部署白名单撤出，原始工作证据非公开保留。未获得本次新版海报导出的完整成功证据，因此不展示旧拼图替代新版1200×1800成果，不宣称本次海报或4K全功能验收。
 
-## 影片与权利
+## 影片许可
 
-演示影片：Coffee Run (2020)，导演 Hjalti Hjalmarsson，Blender Studio。
-
-署名：**(CC) Blender Foundation | studio.blender.org**
+Coffee Run (2020)，导演Hjalti Hjalmarsson。署名：**(CC) Blender Foundation | studio.blender.org**。
 
 - [官方项目](https://studio.blender.org/projects/coffee-run/)
-- [官方授权说明](https://studio.blender.org/projects/coffee-run/pages/licensing/)
+- [官方授权](https://studio.blender.org/projects/coffee-run/pages/licensing/)
 - [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
-影片画面已节选、静音、缩放、截图，或由软件转换为 GIF/拼图。保留作者及许可链接，不暗示 Blender Foundation 支持或认可本产品。官方标志、商标不在影片 CC 授权内；本站选用内容避开片头片尾标志。不因片名出现在软件文件名中主张商标权。
+本站仅选取、截图并按网页容器缩放展示；不提供完整原影片。避开片头片尾标志，不暗示第三方背书。片名及商标权不转让。
 
-网站原创布局及文字 © 2026 Nankong。软件 UI 的软件许可与上游署名保持不变；品牌图标仍按原项目 assets 说明处理。REA、独立封装或代码重写不能取消第三方版权与许可。
+## 字体
 
-## 当前功能依据
+标题使用思源宋体CN Bold真正700字重，文件本地提供，无字体CDN；WOFF2及完整OFL随站发布。Adobe版权及保留名称见[字体许可](assets/fonts/OFL.txt)。字体摘要与截图摘要见[资源清单](media-manifest.json)。字体许可独立于网站源码及App许可。
 
-- 软件 v1.1.2 / build18，源提交 0104723f6932eabbe91960a9cffaf315a4ab8c1d。
-- GIF 界面：upstream/src/components/desktop/desktop-media-tools.tsx，640/3840 两档，5/10/15/20/25/30 FPS，默认20。
-- 原生实现：desktop/NativeMediaTools.swift、desktop/NativePlayer.swift。
-- [已有 UHD 与倍速验证](https://github.com/dashizhihuan2018-source/AIPlayer/blob/v1.1.2/docs/VERIFICATION.md)：是既有工程证据，不是本站重新软件回归。
-- “重点特色”是产品定位，不主张已完成全行业排他性或专利审查，不写“全网唯一”。
+## 功能依据与边界
 
-截图、历史实录、当前参数、已有工程验证和用户接受分别记录。网站更新不替换已安装软件、不改变安装包身份。
+参数依公开软件v1.1.2源提交0104723f6932eabbe91960a9cffaf315a4ab8c1d。GIF界面两档640/3840，5/10/15/20/25/30FPS、默认20FPS；低分辨率不放大。[既有UHD及倍速验证](https://github.com/dashizhihuan2018-source/AIPlayer/blob/v1.1.2/docs/VERIFICATION.md)为历史工程证据，不是本次重跑。
+
+网站原创布局与文字©2026 Nankong，软件保留AGPL及第三方许可。REA或独立重写不能取消版权；本任务不扩张为播放器内核或Rust重写。“特色”不等于已完成行业排他性或专利审查。

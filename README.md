@@ -12,9 +12,9 @@
 - `styles.css`、`media.css`、`site.js`、`.nojekyll`、`.gitignore`、本 README
 - `assets/app-icon.png`、`assets/cosmic.jpg`（现有获准品牌素材）
 - `release.json`、`QA.md`、`scripts/check.mjs`（公开身份、验收范围和静态检查）
-- `assets/demos/` 八份已审查真实界面/实录/导出素材，`media-sources.md` 与 `media-manifest.json`（来源、许可、历史版本与摘要）
+- `assets/screenshots/` 三张本机 V1.1.2/build18 真实截图；`assets/fonts/` 思源宋体真正粗体与 OFL；素材摘要见 `media-manifest.json`
 
-网站 V1.1.0 按宣传海报主线“好电影，一搜就有；精彩，一键分享”，依次介绍搜索发现、播放体验与记录分享；GIF是其中一个功能，不是整站主轴。新增九项功能详解、真实截图、两段可手动播放的历史实录和真实导出样例，另展开4K GIF参数。当前参数与历史素材明确区分，不将普通分辨率样例称为4K。使用系统字体，无远端脚本、分析 SDK 或登录；不自动播放。页面脚本只处理校验值复制。演示影片 Coffee Run 依 CC BY 4.0 使用并署名，完整范围见素材说明；未复用私人播放内容或权利不清的搜索封面。
+网站 V1.2.0 沿用宣传主线“好电影，一搜就有；精彩，一键分享”，搜索发现 → 观看 → 记录分享，GIF仅为一个功能。参考 PDFMaster 的暖纸、深蓝展示区、朱红强调；标题使用本地思源宋体 CN Bold 700 与 OFL。全部当前配图来自最新版正式 App V1.1.2/build18；旧录屏已退出网站。九项功能详解保留参数与限制，4K设置截图不冒充4K输出。无字体 CDN、分析SDK或登录。Coffee Run 按CC BY4.0署名。网站同步GitHub Pages及既有腾讯云隔离静态路径，不变更App或安装包。
 
 ## 维护
 

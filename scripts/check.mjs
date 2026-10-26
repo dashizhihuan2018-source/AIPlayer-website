@@ -10,6 +10,7 @@ for (const page of pages) {
   const html = readFileSync(resolve(root, page), 'utf8');
   check(html.includes('lang="zh-CN"'), `${page}: language`);
   check(html.includes('name="viewport"'), `${page}: viewport`);
+  check(html.includes('assets/fonts/SourceHanSerifCN-Bold.woff2'), `${page}: local font preload`);
   check((html.match(/<h1[ >]/g) || []).length === 1, `${page}: one H1`);
   check(html.includes('© 2026 Nankong'), `${page}: copyright`);
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(x=>x[1]);
@@ -27,14 +28,18 @@ for (const page of pages) {
   }
 }
 const homepage = readFileSync(resolve(root, 'index.html'), 'utf8');
-check((homepage.match(/<video /g)||[]).length === 2, 'two real operation videos');
+check(!homepage.includes('assets/demos/'), 'no retired historical media');
 check(!/<video[^>]*autoplay/.test(homepage), 'no automatic playback');
-check(homepage.includes('build15') && homepage.includes('不是4K'), 'history / sample boundaries visible');
+check(homepage.includes('build18') && homepage.includes('不是4K导出成果图'), 'latest capture and output boundaries visible');
 check(homepage.includes('好电影，一搜就有。') && homepage.includes('精彩，一键分享。'), 'campaign product narrative');
 check(homepage.indexOf('id="features"') < homepage.indexOf('id="gif-4k"'), 'whole product before GIF detail');
 for (const image of homepage.matchAll(/<img\b([^>]+)>/g)) check(/alt="[^"]*"/.test(image[1]), 'image has alternative text');
 const manifest = JSON.parse(readFileSync(resolve(root,'media-manifest.json'),'utf8'));
-check(manifest.files.length === 8, 'eight allowlisted real media assets');
+check(manifest.files.length === 5, 'three latest screenshots plus licensed font and license');
+check(manifest.captureBuild === 18, 'latest official build capture identity');
+const css = readFileSync(resolve(root,'styles.css'),'utf8');
+check(css.includes('font-family:AIPlayerTitleSerif') && css.includes('font-weight:700;font-display:swap'), 'real bold font face');
+check(css.includes('font-synthesis:none'), 'no synthesized title bold');
 check(manifest.websiteVersion === JSON.parse(readFileSync(resolve(root,'release.json'),'utf8')).website.version, 'media and site version match');
 for (const asset of manifest.files) {
   const data = readFileSync(resolve(root,asset.path));
