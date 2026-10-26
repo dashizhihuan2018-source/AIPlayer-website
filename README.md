@@ -8,12 +8,13 @@
 
 ## 文件白名单
 
-- `index.html`、`guide.html`、`download.html`、`privacy.html`
-- `styles.css`、`site.js`、`.nojekyll`、`.gitignore`、本 README
+- `index.html`、`features.html`、`guide.html`、`download.html`、`privacy.html`
+- `styles.css`、`media.css`、`site.js`、`.nojekyll`、`.gitignore`、本 README
 - `assets/app-icon.png`、`assets/cosmic.jpg`（现有获准品牌素材）
 - `release.json`、`QA.md`、`scripts/check.mjs`（公开身份、验收范围和静态检查）
+- `assets/demos/` 八份已审查真实界面/实录/导出素材，`media-sources.md` 与 `media-manifest.json`（来源、许可、历史版本与摘要）
 
-使用系统字体，无远端脚本、分析 SDK 或登录。页面脚本只处理校验值复制。首页插画为功能示意，非真实 App 截图；未复用私人截屏或第三方影视素材。
+网站 V1.1.0 按宣传海报主线“好电影，一搜就有；精彩，一键分享”，依次介绍搜索发现、播放体验与记录分享；GIF是其中一个功能，不是整站主轴。新增九项功能详解、真实截图、两段可手动播放的历史实录和真实导出样例，另展开4K GIF参数。当前参数与历史素材明确区分，不将普通分辨率样例称为4K。使用系统字体，无远端脚本、分析 SDK 或登录；不自动播放。页面脚本只处理校验值复制。演示影片 Coffee Run 依 CC BY 4.0 使用并署名，完整范围见素材说明；未复用私人播放内容或权利不清的搜索封面。
 
 ## 维护
 

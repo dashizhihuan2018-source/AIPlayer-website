@@ -1,0 +1,49 @@
+{
+  "websiteVersion": "V1.1.0",
+  "softwareVersion": "V1.1.2/build18",
+  "captureBuild": 15,
+  "attribution": "(CC) Blender Foundation | studio.blender.org",
+  "license": "CC BY 4.0 (film content); software UI retains existing software licenses",
+  "files": [
+    {
+      "path": "assets/demos/gif-export-first.png",
+      "bytes": 737072,
+      "sha256": "2626824fed15769fda638b29b4ff878b48f113b9cea450e3ee8513160f1cf02b"
+    },
+    {
+      "path": "assets/demos/gif-export.gif",
+      "bytes": 1497648,
+      "sha256": "ff441da7f956bb97bd00885cf083beca5d5b77d2b8025468febae8fed399f691"
+    },
+    {
+      "path": "assets/demos/gif-operation.mp4",
+      "bytes": 889909,
+      "sha256": "12fe1edc4b859da17ce73ce1c810e4f6b9186409cf7dea48c459c33709bb93c0"
+    },
+    {
+      "path": "assets/demos/gif-settings-real.png",
+      "bytes": 560633,
+      "sha256": "f07f45dd906e28e6c105dd25fbfd9463b1519e2cf4beaee1d4e85b6137f86917"
+    },
+    {
+      "path": "assets/demos/player-real.png",
+      "bytes": 387970,
+      "sha256": "77279dec84d9f9408685562fdbddd2cb4464221c3ca5309c35c15eb4c0565d5e"
+    },
+    {
+      "path": "assets/demos/poster-export.png",
+      "bytes": 627646,
+      "sha256": "92affa17d16934391c990507c7db0b58cd363062028a3e27d95bdeba80010b5f"
+    },
+    {
+      "path": "assets/demos/poster-operation.mp4",
+      "bytes": 678341,
+      "sha256": "34ea3a56cfee602e879e5e236e0251720b9e4f2244a897f5b7f4beb7a4b8f38f"
+    },
+    {
+      "path": "assets/demos/poster-preview-real.png",
+      "bytes": 526761,
+      "sha256": "877a12a7a0a20fd77a0de8b1c4c86a1179ac6adf86687099777d5cc60b287cc6"
+    }
+  ]
+}
